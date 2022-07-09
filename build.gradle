@@ -23,12 +23,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.7'
     implementation 'junit:junit:4.13.1'
     implementation 'org.springframework.boot:spring-boot-starter-mustache:2.6.7'
-    // implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.7.0'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.7.0'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2:2.1.212'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'com.h2database:h2:2.1.212'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test:5.6.3'
 }
 
 tasks.named('test') {
